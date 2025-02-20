@@ -1,0 +1,289 @@
+/* button ==> open account */
+.btn-component {
+  text-decoration: none;
+  background-color: rgb(91, 181, 162);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+}
+
+/* button ==> compare cards */
+.compare-cards {
+  font-family: "Inter", sans-serif;
+  margin-left: 10px;
+}
+.compare-cards a {
+  color: rgb(91, 181, 162);
+  text-decoration: none;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* correct icon */
+.svg-correct {
+  color: rgb(91, 181, 162);
+  background-color: rgb(232, 242, 238);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  margin-right: 10px;
+}
+
+/* correct icon reverse */
+.svg-correct-reverse {
+  color: rgb(232, 242, 238);
+  background-color: rgb(91, 181, 162);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  margin-right: 10px;
+}
+
+.drop-down {
+  background-color: rgb(248, 248, 248);
+  z-index: 1000;
+  position: fixed;
+}
+.drop-down .cat-links ul h6 {
+  font-size: 18px;
+}
+.drop-down .cat-links ul li a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.drop-down .cat-links ul li a:last-child {
+  color: rgb(91, 181, 162);
+  font-size: 18px;
+}
+.drop-down .card {
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .drop-down .card {
+    width: 50%;
+  }
+}
+.drop-down .card.active {
+  background-color: white;
+}
+.drop-down .card h6 {
+  font-size: 10px;
+}
+.drop-down .card p {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+/* avtie link header */
+.active {
+  background-color: rgb(248, 248, 248);
+  border-radius: 6px;
+}
+
+/* blog buttons */
+.blog-btns a {
+  background-color: #f8f8f8;
+}
+
+/* active blog key*/
+.active-key {
+  color: rgb(91, 181, 162);
+  font-weight: 500;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Show and hide <p> in question*/
+.not-visable {
+  display: none;
+}
+
+/* rotate svg */
+.r-45 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", serif;
+  scroll-behavior: smooth;
+}
+
+/* header */
+.navbar {
+  background-color: white;
+  z-index: 1;
+}
+.navbar .navbar-brand {
+  color: rgb(91, 181, 162);
+}
+.navbar .navbar-toggler {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navbar .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.navbar .navbar-toggler svg {
+  color: rgb(91, 181, 162);
+}
+.navbar .navbar-collapse ul li {
+  margin: 4px;
+}
+.navbar .navbar-collapse ul li a {
+  font-family: "Inter", sans-serif;
+  color: var(--dark-color);
+  padding-left: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.navbar .navbar-collapse ul li a.active {
+  background-color: rgb(248, 248, 248);
+  border-radius: 6px;
+}
+.navbar .navbar-collapse ul li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  border-radius: 6px;
+  z-index: -1;
+  -webkit-transition: bottom 0.3s linear, left 0.5s linear;
+  transition: bottom 0.3s linear, left 0.5s linear;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-collapse ul li a::before {
+    bottom: 0%;
+    left: -100%;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-collapse ul li a::before {
+    bottom: -100%;
+    left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar .navbar-collapse ul li a:hover::before {
+    left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-collapse ul li a:hover::before {
+    bottom: 0;
+  }
+}
+.navbar .navbar-collapse ul li svg {
+  cursor: pointer;
+  font-size: 10px;
+}
+.navbar .btns span a {
+  text-decoration: none;
+}
+.navbar .btns span:nth-child(1) a {
+  color: rgb(91, 181, 162);
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .info {
+    width: 75%;
+  }
+}
+.info span {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.info h2 {
+  font-size: 55px;
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .info h2 {
+    font-size: 39px;
+  }
+}
+@media (max-width: 768px) {
+  .info h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .info h5 {
+    font-size: 16px;
+  }
+}
+.info img {
+  border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+  .info-text {
+    width: 50%;
+  }
+}
+.info-text h4 {
+  font-size: 28px;
+  padding: 10px 0;
+}
+.info-text p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media (min-width: 768px) {
+  .info-links {
+    width: 25%;
+  }
+}
+.info-links ul li {
+  background-color: rgb(248, 248, 248);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.info-links ul li:hover svg {
+  color: rgb(91, 181, 162);
+  font-size: 20px;
+}
+
+/* footer */
+footer li a {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+footer li a:hover {
+  color: rgb(91, 181, 162);
+}
+footer ul span {
+  font-size: 18px;
+  font-family: "Dm", sans-serif;
+}
+footer ul.row li:first-child {
+  color: rgb(91, 181, 162);
+}
+footer .descripe {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+footer .descripe span {
+  color: rgb(91, 181, 162);
+}

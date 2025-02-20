@@ -1,0 +1,23 @@
+/* bulid question */
+.questions {
+    .question {
+        border-bottom: 1px solid rgba(232, 232, 232, 1);
+        div {
+            p {
+                @media (max-width: 576px) {
+                    font-size: 1rem;
+                }
+            }
+            span {
+                svg {
+                    color: $mainColor;
+                    cursor: pointer;
+                    transition: transform 1s linear;
+                }
+            }
+            + p {
+                transition: display 6s linear;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "sass/helpers/variables";
+/* footer */
+footer {
+    li a {
+        font-family: "Inter", sans-serif;
+        color: rgba(black, 0.5);
+        &:hover {
+            color: $mainColor;
+        }
+    }
+    ul span {
+        font-size: 18px;
+        font-family: "Dm", sans-serif;
+    }
+    ul.row {
+        li:first-child {
+            color: $mainColor;
+        }
+    }
+    .descripe {
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+        span {
+            color: $mainColor;
+        }
+    }
+}

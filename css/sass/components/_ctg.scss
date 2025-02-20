@@ -1,0 +1,49 @@
+/* ctg */
+.ctg {
+    background-color: $mainColor;
+    border-radius: 20px;
+    .ctg-text {
+        @media (max-width: 767px) {
+            & {
+                padding: 10%;
+            }
+        }
+        .row {
+            svg {
+                background-color: rgba(white, 0.2);
+                margin-top: 10px;
+            }
+        }
+    }
+    .ctg-buttons {
+        button {
+            border-radius: 10px;
+            color: white;
+            &:hover {
+                color: $mainColor;
+                svg {
+                    color: $mainColor;
+                }
+            }
+            svg {
+                font-size: 40px;
+                color: white;
+            }
+            p {
+                font-size: 10px;
+                // color: white;
+            }
+            h6 {
+                margin-bottom: 0;
+                // color: white;
+            }
+        }
+    }
+    img {
+        border-top-right-radius: 55px;
+        border-top-left-radius: 55px;
+        @media (max-width: 767px) {
+            width: 90%;
+        }
+    }
+}

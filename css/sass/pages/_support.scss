@@ -1,0 +1,33 @@
+.faq {
+    .faq-categorie {
+        height: fit-content;
+        border-radius: 8px;
+        padding: 32px;
+        background-color: rgba(248, 248, 248, 1);
+        @media (max-width: 768px) {
+            padding: 10px;
+        }
+        a {
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+            font: {
+                size: 16px;
+                family: "Inter", sans-serif;
+                weight: 500;
+            }
+            color: rgba(26, 25, 30, 0.5);
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            &:first-of-type {
+                color: $mainColor;
+            }
+        }
+    }
+    .faq-sections {
+        @media (max-width: 768px) {
+            flex: 1;
+        }
+    }
+}

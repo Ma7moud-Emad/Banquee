@@ -1,0 +1,144 @@
+@import "sass/helpers/variables";
+
+// feature veiw
+.feat-veiw {
+    background-color: $bgSection;
+    max-height: 100vh;
+    overflow: hidden;
+    .veiw-text {
+        padding-top: 66px;
+        padding-bottom: 66px;
+        h1 {
+            font-size: 40px;
+        }
+        span,
+        p {
+            font-size: 10px;
+        }
+        @media (min-width: 767px) {
+            h1 {
+                font-size: 80px;
+            }
+            span,
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    .veiw-images {
+        column-gap: 50px;
+        margin-left: -100px;
+        img {
+            border-radius: 20px;
+            width: calc((100% - 100px) / 5);
+            &:nth-child(1),
+            &:nth-child(5) {
+                transform: translateY(192px);
+            }
+            &:nth-child(3) {
+                transform: translateY(20px);
+            }
+            &:nth-child(2),
+            &:nth-child(4) {
+                transform: translateY(96px);
+            }
+        }
+        @media (max-width: 566px) {
+            & {
+                column-gap: 20px;
+                margin-left: -40px;
+                img {
+                    border-radius: 5px;
+                    width: calc((100% - 40px) / 5);
+                    &:nth-child(1),
+                    &:nth-child(5) {
+                        transform: translateY(90px);
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(5px);
+                    }
+                    &:nth-child(2),
+                    &:nth-child(4) {
+                        transform: translateY(45px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// common component
+.common-component {
+    .component-text {
+        @media (min-width: 767px) {
+            width: 60%;
+        }
+        font-weight: 500;
+        p {
+            font: {
+                family: "Inter", sans-serif;
+            }
+        }
+    }
+    .component-image {
+        @media (min-width: 767px) {
+            width: 30%;
+        }
+    }
+}
+// really
+.really {
+    .statistic-card {
+        column-gap: 32px;
+        .sta-card {
+            background-color: rgba(248, 248, 248, 1);
+            border-radius: 20px;
+            @media (min-width: 768px) {
+                width: calc((100% - 32px) / 2);
+            }
+            > img {
+                width: 80%;
+                // margin: auto;
+            }
+            .imgs {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                img {
+                    width: 35%;
+                    &:not(:nth-child(2)) {
+                        transform: translateY(52%);
+                    }
+                    &:nth-child(2) {
+                        transform: translateY(35%);
+                    }
+                }
+            }
+        }
+    }
+}
+// cards and really
+.cards-text,
+.really-text {
+    h2 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    p {
+        font-family: "Inter", sans-serif;
+        width: 80%;
+        margin: auto;
+        @media (min-width: 789px) {
+            width: 50%;
+            font-size: 20px;
+        }
+        @media (min-width: 1200px) {
+            width: 40%;
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 42px;
+        }
+    }
+}

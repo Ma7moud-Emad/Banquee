@@ -1,0 +1,117 @@
+/* start hero */
+.fontpage-hero {
+    min-height: calc(100vh);
+    .text {
+        color: $darkColor;
+        font-family: "Inter", sans-serif;
+    }
+}
+/* start features */
+.features {
+    min-height: calc(100vh);
+    .Cards {
+        .Card {
+            border-radius: 20px;
+            svg {
+                transform: translateY(0);
+            }
+            p {
+                font-size: 16px;
+                font-family: "Inter", sans-serif;
+            }
+        }
+    }
+}
+/* start transactions */
+.transactions {
+    background-color: $bgSection;
+    .text {
+        color: var(--dark-color);
+        font-family: "Inter", sans-serif;
+    }
+}
+/* start saving */
+.Card-add div {
+    background-color: $bgSection;
+    border-radius: 20px;
+    min-height: 170px;
+    cursor: pointer;
+    flex: 1;
+}
+/* account */
+
+.account {
+    @media (min-width: 768px) {
+        width: 50%;
+        margin: auto;
+    }
+    .account-content {
+        .images {
+            img {
+                max-width: 400px;
+                max-height: 200px;
+                border-radius: 20px;
+                &:nth-child(2) {
+                    transform: translateY(-120px);
+                }
+                &:nth-child(3) {
+                    transform: translateY(-240px);
+                }
+            }
+        }
+        .buttons {
+            margin-top: -200px;
+        }
+    }
+}
+/* Testimonials */
+.testimonials {
+    .testimonials-text {
+        .Icon {
+            p {
+                font-family: "Inter", sans-serif;
+                font-size: 18px;
+                span {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .testimonials-member {
+        .groups {
+            @media (min-width: 768px) {
+                width: calc((100% - 1rem) / 2);
+            }
+            @media (min-width: 992px) {
+                width: calc((100% - 2rem) / 3);
+            }
+            .member {
+                border-radius: 10px;
+                ul {
+                    li {
+                        color: $mainColor;
+                    }
+                }
+                h6 {
+                    font-size: 18px;
+                }
+            }
+            &.one {
+                @media (min-width: 768px) {
+                    margin-right: 1rem;
+                }
+            }
+            &.two {
+                @media (min-width: 992px) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+// blog
+.blog {
+    img {
+        cursor: pointer;
+    }
+}

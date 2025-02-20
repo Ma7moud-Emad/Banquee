@@ -1,0 +1,24 @@
+/* blog */
+.blog {
+    .blog-title {
+        font-size: 70px;
+    }
+    .blog-links {
+        column-gap: 10px;
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        ul {
+            column-gap: 10px;
+            li {
+                cursor: pointer;
+                background-color: #f8f8f8;
+                padding: 4px 10px;
+            }
+        }
+    }
+    img {
+        cursor: pointer;
+    }
+}

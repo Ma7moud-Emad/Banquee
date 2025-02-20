@@ -1,0 +1,16 @@
+/* correct icon */
+.svg-correct {
+    color: $mainColor;
+    background-color: rgba(232, 242, 238, 1);
+    width: fit-content;
+    transform: translateY(5px);
+    margin-right: 10px;
+}
+/* correct icon reverse */
+.svg-correct-reverse {
+    color: rgba(232, 242, 238, 1);
+    background-color: $mainColor;
+    width: fit-content;
+    transform: translateY(5px);
+    margin-right: 10px;
+}

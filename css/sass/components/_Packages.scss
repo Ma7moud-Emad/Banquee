@@ -1,0 +1,48 @@
+.Packages {
+    .Package {
+        @media (max-width: 575px) {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .Package-text {
+            h5 {
+                span {
+                    color: $mainColor;
+                    background-color: rgba(232, 242, 238, 1);
+                    margin-left: 10px;
+                    font-size: 12px;
+                    font-family: "Inter", sans-serif;
+                    padding: 4px;
+                    cursor: pointer;
+                }
+            }
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+                span {
+                    font-size: 14px;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 500;
+                }
+            }
+            p {
+                font-size: 14px;
+                font-family: "Inter", sans-serif;
+                font-weight: 500;
+            }
+        }
+        .Package-image {
+            margin-bottom: 10px;
+        }
+        .Package-btn {
+            a {
+                font-size: 15px;
+                font-weight: 500;
+                background-color: $mainColor;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}

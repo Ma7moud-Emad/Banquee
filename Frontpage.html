@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Css  -->
+    <link rel="stylesheet" href="css/fontpage.css">
+    <!-- DM font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Metal+Mania&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metal+Mania&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Banquee</title>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-2 " href="#">banquee.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item me-lg-4 me-xl-5">
+                        <a class="nav-link text-capitalize fs-6 fw-medium py-2 pe-2 " aria-current="page"
+                            href="features.html">features</a>
+                    </li>
+                    <li class="nav-item me-lg-4 me-xl-5 d-flex align-items-center">
+                        <a class="nav-link text-capitalize fs-6 fw-medium py-2 pe-2" href="compare.html">compare</a>
+                        <span class="dropdown-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li class="nav-item me-lg-4 me-xl-5">
+                        <a class="nav-link text-capitalize fs-6 fw-medium py-2 pe-2 " href="support.html">support</a>
+                    </li>
+                    <li class="nav-item me-lg-4 me-xl-5 d-flex align-items-center">
+                        <a class="nav-link text-capitalize fs-6 fw-medium py-2 pe-2 " href="blog.html">blog</a>
+                        <span class="dropdown-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <span>
+                        <a href="#footer" class="text-capitalize fw-medium fs-6">login</a>
+                    </span>
+                    <span>
+                        <a href="#" class="btn-component text-capitalize fw-medium fs-6 text-white px-3">open
+                            account</a>
+                    </span>
+                </div>
+            </div>
+    </nav>
+    <!-- drop down blog -->
+    <div class="drop-down not-visable">
+        <div class="container px-lg-5 py-4 d-flex">
+            <div class="cat-links w-100">
+                <ul class="list-unstyled">
+                    <h6 class="mb-4">Categories</h6>
+                    <li class="mb-3"><a class="text-decoration-none text-capitalize fs-6 text-black-50"
+                            href="#">Products</a></li>
+                    <li class="mb-3"><a class="text-decoration-none text-capitalize fs-6 text-black-50"
+                            href="#">Technology</a></li>
+                    <li class="mb-3"><a class="text-decoration-none text-capitalize fs-6 text-black-50"
+                            href="#">Crypto</a>
+                    </li>
+                    <li class="mt-4"><a class="text-decoration-none text-capitalize" href="blog.html">
+                            all articles <i class="fa-solid fa-arrow-right"></i>
+                        </a></li>
+
+                </ul>
+            </div>
+            <div class="cards d-flex flex-wrap ms-5">
+                <div class="card p-3 border-0 active">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="images/blog-one.jpg" class="img-fluid rounded-start" alt="Not found">
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-0 ps-1">
+                                <h6 class="card-title">How to design a product that can grow itself 10x in year</h6>
+                                <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-3 border-0">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="images/blog-two.jpg" class="img-fluid rounded-start" alt="Not found">
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-0 ps-1">
+                                <h6 class="card-title">Eget gravida cum sociis natoque</h6>
+                                <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-3 border-0">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="images/blog-three.jpg" class="img-fluid rounded-start" alt="Not found">
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-0 ps-1">
+                                <h6 class="card-title">Eget gravida cum sociis natoque</h6>
+                                <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-3 border-0">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <img src="images/blog-four.jpg" class="img-fluid rounded-start" alt="Not found">
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="card-body p-0 ps-1">
+                                <h6 class="card-title">Eget gravida cum sociis natoque</h6>
+                                <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- drop down compare -->
+    <div class="drop-down not-visable">
+        <div class="container py-5 py-sm-0">
+            <div class="Packages py-sm-5 d-sm-flex gap-4">
+                <div class="Package text-center mb-4">
+                    <div class="Package-text text-capitalize">
+                        <h5>basic <span class="rounded rounded-4 ">Popular</span></h5>
+
+                        <p class="text-black-50">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="Package-image">
+                        <img src="images/blue_account.jpg" alt="Not found" class="img-fluid">
+                    </div>
+                </div>
+                <div class="Package text-center mb-4">
+                    <div class="Package-text text-capitalize">
+                        <h5>premium</h5>
+                        <p class="text-black-50">Lorem ipsum dolor </p>
+                    </div>
+                    <div class="Package-image">
+                        <img src="images/black-account.jpg" alt="Not found" class="img-fluid">
+                    </div>
+                </div>
+                <div class="Package text-center mb-4">
+                    <div class="Package-text text-capitalize">
+                        <h5>Gold</h5>
+
+                        <p class="text-black-50">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="Package-image">
+                        <img src="images/brown_account.jpg" alt="Not found" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- start hero -->
+    <div class="fontpage-hero">
+        <div class="container p-3 p-md-5">
+            <div class="row justify-content-center">
+                <div class="text col-md-7 col-lg-6 mb-3 mb-md-0 p-md-0">
+                    <h1>Banking<br>starts here.</h1>
+                    <p class="h5 fw-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6 mb-2">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">instant
+                                transfer</span>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">payments
+                                worldwide</span>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">saving
+                                accounts</span>
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">100%
+                                mobile banking</span>
+                        </div>
+                    </div>
+                    <div class="btns mt-5 d-flex justify-content-between">
+                        <span>
+                            <a href="#" class="btn-component text-capitalize fw-medium fs-6 text-white px-3">
+                                open account
+                            </a>
+                        </span>
+                        <span class="compare-cards me-md-auto">
+                            <a href="compare.html" class="text-capitalize fw-medium fs-">
+                                compare cards <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <img class="img-fluid col-md-5 col-lg-4" src="images/card.PNG" alt="Not found">
+
+            </div>
+        </div>
+    </div>
+    <!-- start features -->
+    <div class="features">
+        <div class="container p-3 p-md-5">
+            <div class="content row">
+                <div class="left col-md-7 px-4">
+                    <h1>One app. <br>One banking.</h1>
+                    <div class="Cards row gap-3 justify-content-center justify-content-md-start">
+                        <div class="Card col-lg-5 p-4 rounded-5 border border-3">
+                            <i class="fa-solid fa-bolt rounded-circle svg-correct p-2 d-block mb-2"></i>
+                            <span class="fw-bold text-capitalize h5">instant <br> transactions</span>
+                            <p>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="Card col-lg-5 p-4 rounded-5 border border-3">
+                            <i class="fa-solid fa-wifi rounded-circle svg-correct p-2 d-block mb-2"></i>
+                            <span class="fw-bold text-capitalize h5">instant <br> transactions</span>
+                            <p>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="Card col-lg-5 p-4 rounded-5 border border-3">
+                            <i class="fa-solid fa-mobile-screen-button rounded-circle d-block svg-correct p-2 mb-2"></i>
+                            <span class="fw-bold text-capitalize h5">instant <br> transactions</span>
+                            <p>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="Card col-lg-5 p-4 rounded-5 border border-3">
+                            <i class="fa-solid fa-chart-line rounded-circle svg-correct d-blockct p-2 mb-2"></i>
+                            <span class="fw-bold text-capitalize h5">instant <br> transactions</span>
+                            <p>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="Card col-lg-5 p-4 rounded-5 border border-3">
+                            <i class="fa-solid fa-money-check rounded-circle svg-correct d-blockect p-2 mb-2"></i>
+                            <span class="fw-bold text-capitalize h5">instant <br> transactions</span>
+                            <p>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="Card col-lg-5 p-4 rounded-5 border border-3">
+                            <i class="fa-solid fa-wifi rounded-circle svg-correct p-2 d-block mb-2"></i>
+                            <span class="fw-bold text-capitalize h5">instant <br> transactions</span>
+                            <p>Odio euismod lacinia at quis. Amet purus gravida quis blandit turpis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right col-md-5 col-lg-4 col-xl-3 mt-5 mt-md-0">
+                    <img class="img-fluid" src="images/fontpage-feature.jpg" alt="Not found">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start transactions -->
+    <div class="transactions">
+        <div class="container px-3 pt-3 px-md-5 pt-md-5">
+            <div class="row">
+                <div class="text col-md-7 col-lg-6">
+                    <h1>Send & receive<br>money instantly</h1>
+                    <p class="h5 fw-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore.
+                    </p>
+                    <div class="row">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct-reverse p-2"></i><span
+                                class="text-capitalize ms-1">Malesuada
+                                Ipsum</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct-reverse p-2"></i><span
+                                class="text-capitalize ms-1">Vestibulum
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct-reverse p-2"></i><span
+                                class="text-capitalize ms-1">Parturient Lorem
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-fluid col-md-5 col-lg-4" src="images/fontpage-transactions.png" alt="Not found">
+
+            </div>
+        </div>
+    </div>
+    <!-- saving -->
+    <div class="saving">
+        <div class="container">
+            <div class="saving-text text-capitalize py-5">
+                <span class="h5">saving accounts</span>
+                <h1>Organize your <br> money the right way</h1>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <p class="w-75 mb-0 h5">amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia
+                        consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <span class="compare-cards align-self-end">
+                        <a href="#" class="text-capitalize fw-medium ">
+                            all features <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="saving-images row justify-content-between">
+                <div class="Card col-6 col-md-3 col-lg ">
+                    <img class="w-100" src="images/saving-one.jpg" alt="Not found">
+                    <h5 class="text-capitalize pt-4">new laptop</h5>
+                    <p class="text-black-50">400$</p>
+                </div>
+                <div class="Card col-6 col-md-3 col-lg">
+                    <img class="w-100" src="images/saving-two.jpg" alt="Not found">
+                    <h5 class="text-capitalize pt-4">dream bike</h5>
+                    <p class="text-black-50">200$</p>
+                </div>
+                <div class="Card col-6 col-md-3 col-lg">
+                    <img class="w-100" src="images/saving-three.jpg" alt="Not found">
+                    <h5 class="text-capitalize pt-4">holiday</h5>
+                    <p class="text-black-50">14000$</p>
+                </div>
+                <div class="Card col-6 col-md-3 col-lg">
+                    <img class="w-100" src="images/saving-four.jpg" alt="Not found">
+                    <h5 class="text-capitalize pt-4">camera</h5>
+                    <p class="text-black-50">100$</p>
+                </div>
+                <div class="Card Card-add col-6 col-md-3 col-lg d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus text-white rounded-circle bg-black p-3"></i>
+                    </div>
+                    <h5 class="text-capitalize pt-4 opacity-0">holiday</h5>
+                    <!-- opacity-0 -->
+                    <p class="text-black-50 opacity-0">14000$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Notifications -->
+    <div class="notifications">
+        <div class="container py-3 py-md-5">
+            <div class="row justify-content-between">
+                <div class="text col-md-7 col-lg-6 text-capitalize">
+                    <span class="h5">notifications</span>
+                    <h1>Stay notified</h1>
+                    <p class="h5 fw-medium">amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div class="row mt-4">
+                        <div>
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">Malesuada
+                                Ipsum</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">Vestibulum
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                                class="text-capitalize ms-1">Parturient Lorem
+                            </span>
+                        </div>
+                        <span class="compare-cards my-5 ms-0 mb-md-0">
+                            <a href="compare.html" class="text-capitalize fw-medium fs-">
+                                compare cards <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <img class="img-fluid col-md-5 col-lg-4" src="images/notfications.jpg" alt="Not found">
+            </div>
+        </div>
+    </div>
+    <!-- tools -->
+    <div class="tools">
+        <div class="container py-5">
+            <div class="tool-logo w-100 w-lg-75">
+                <img class="align-baseline" src="images/tools-logo-one.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-two.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-three.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-four.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-five.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-six.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-seven.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-eight.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-nine.jpg" alt="Not found">
+                <img class="align-baseline" src="images/tools-logo-ten.jpg" alt="Not found">
+            </div>
+            <div class="tool-text text-capitalize col-md-7 col-lg-6 d-md-flex w-100">
+                <div class="pt-5">
+                    <span class="h5">tools</span>
+                    <h1>seemless <br> integration</h1>
+                    <p class="h5 fw-medium">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat duis enim velit mollit.</p>
+                </div>
+                <div class="row align-content-end">
+                    <div>
+                        <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                            class="text-capitalize ms-1">Malesuada
+                            Ipsum</span>
+                    </div>
+                    <div class=" x">
+                        <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2 "></i><span
+                            class="text-capitalize ms-1">Vestibulum
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check p-1 rounded-circle svg-correct p-2"></i><span
+                            class="text-capitalize ms-1">Parturient Lorem
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- account -->
+    <div class="account">
+        <div class="container py-5 w-100 w-md-50">
+            <div class="account-text text-center text-capitalize mx-auto py-5">
+                <span class="h5">account</span>
+                <h1 class="fw-medium">Perfect card <br> for your needs.</h1>
+                <p class="h5 fw-medium">Senectus et netus et malesuada fames ac turpis.
+                    Sagittis vitae et leo duis ut diam.</p>
+            </div>
+            <div class="account-content ">
+                <div class="images text-center">
+                    <img src="images/black-account.jpg" alt="Not found">
+                    <img src="images/blue_account.jpg" alt="Not found">
+                    <img src="images/brown_account.jpg" alt="Not found">
+                </div>
+                <div class="buttons text-center">
+                    <span>
+                        <a href="#" class="btn-component text-capitalize fw-medium fs-6 text-white px-3">open
+                            account</a>
+                    </span>
+                    <span>
+                        <a href="compare.html"
+                            class="btn-component text-capitalize fw-medium fs-6 px-3 bg-white text-black border border-black border-2">compare
+                            card</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <div
+                class="testimonials-text text-capitalize d-flex justify-content-md-between align-items-md-end flex-column flex-md-row">
+                <div class="heading">
+                    <span class="h5">testimonials</span>
+                    <h1>People all over the <br> world use banko.</h1>
+                </div>
+                <div class="Icon">
+                    <i class="fa-solid fa-star svg-correct p-2 rounded-circle"></i>
+                    <p class="fw-medium d-inline">Rated <span>4.8/5</span> from over 1000 users</p>
+                </div>
+            </div>
+            <div class="testimonials-member pt-5 d-md-flex flex-wrap justify-content-center">
+                <div class="groups one">
+                    <div class="member border border-2 p-3 mb-3">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h4>Sunt qui esse pariatur <br> duis deserunt mollit </h4>
+                        <p class="fs-6 fw-medium">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                            ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit
+                            elit laborum. </p>
+                        <h6>Cody Fisher</h6>
+                        <span class="text-black-50">Medical Assistant</span>
+                    </div>
+                    <div class="member border border-2 p-3 mb-3 ">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h4>Sunt qui esse pariatur <br> duis deserunt mollit </h4>
+                        <p class="fs-6 fw-medium">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                            ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit
+                            elit laborum. </p>
+                        <h6>Cody Fisher</h6>
+                        <span class="text-black-50">Medical Assistant</span>
+                    </div>
+
+                </div>
+                <div class="groups two">
+                    <div class="member border border-2 p-3 mb-3">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h4>At lectus urna duis <br> convallis tellus </h4>
+                        <p class="fs-6 fw-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla
+                            facilisi morbi. </p>
+                        <p class="fs-6 fw-medium">In nibh mauris cursus mattis. At lectus urna duis convallis
+                            convallis tellus. Enim blandit volutpat maecenas volutpat.</p>
+                        <h6>Jenny Wilson</h6>
+                        <span class="text-black-50">Nursing Assistant</span>
+                    </div>
+                    <div class="member border border-2 p-3 mb-3">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h4>Donec et fringilla neque </h4>
+                        <p class="fs-6 fw-medium">Etiam accumsan porta neque in viverra. Proin eleifend, eros in
+                            tristique hendrerit, nisi purus cursus sapien, id ultrices nunc tellus a ipsum. Donec et
+                            fringilla neque. Aenean consequat purus quis lectus maximus fermentum.</p>
+                        <h6>Darlene Robertson</h6>
+                        <span class="text-black-50">Dog Trainer</span>
+                    </div>
+                </div>
+                <div class="groups three">
+                    <div class="member border border-2 p-3 mb-3">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h4>Elit aute irure tempor<br> cupidatat incididunt</h4>
+                        <p class="fs-6 fw-medium">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
+                            qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+                            tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                        <h6>Guy Hawkins</h6>
+                        <span class="text-black-50">President of Sales</span>
+                    </div>
+                    <div class="member border border-2 p-3 mb-3 ">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <h4>Etiam accumsan porta <br> neque eros</h4>
+                        <p class="fs-6 fw-medium">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
+                            ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit
+                            elit laborum. </p>
+                        <h6>Dianne Russell</h6>
+                        <span class="text-black-50">Medical Assistant</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ctg -->
+    <div class="container py-5">
+        <div class="ctg text-white pt-5">
+            <div class="row justify-content-center">
+                <div class="ctg-text col-md-6  mb-3 mb-md-0 p-md-0">
+                    <h1>One app.<br>One banking.</h1>
+                    <p class="h5 fw-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-check rounded-circle p-1"></i><span
+                                class="text-capitalize ms-1">Instant transactions</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-check rounded-circle p-1"></i><span
+                                class="text-capitalize ms-1">payments
+                                worldwide</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-check rounded-circle p-1"></i><span
+                                class="text-capitalize ms-1">saving
+                                accounts</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <i class="fa-solid fa-check rounded-circle p-1"></i><span class="text-capitalize ms-1">100%
+                                mobile banking</span>
+                        </div>
+                    </div>
+                    <div class="ctg-buttons d-flex gap-3 pt-5">
+                        <button class="bg-black d-flex border-0 p-2">
+                            <a class="me-2 lh-0" href="#"><i class="fa-brands fa-apple bg-transparent"></i></a>
+                            <div>
+                                <p class="mb-0">Download on the</p>
+                                <h6 class="mb-0 text-capitalize"> app store</h6>
+                            </div>
+                        </button>
+                        <button class="bg-black d-flex border-0 p-2">
+                            <a class="me-2 lh-0" href="#"><i class="fa-brands fa-google-play bg-transparent"></i></a>
+                            <div>
+                                <p class="mb-0 text-uppercase">get in on</p>
+                                <h6 class="mb-0 text-capitalize">google play</h6>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <img class="img-fluid col-md-4" src="images/ctg.jpg" alt="Not found">
+
+            </div>
+        </div>
+    </div>
+    <!-- need help -->
+    <div class="container">
+        <div class="need-help row justify-content-between">
+            <div class="call col-lg">
+                <h1 class="text-capitalize">need help?</h1>
+                <div class="call-way d-flex mt-5 mb-3">
+                    <i class="fa-solid fa-phone svg-correct rounded-circle p-2"></i>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-black fw-medium">+49 176 123 456</a>
+                        <span class="text-capitalize text-black-50">Support Hotline</span>
+                    </div>
+                </div>
+                <div class="call-way d-flex mt-3 mb-5">
+                    <i class="fa-solid fa-envelope svg-correct rounded-circle p-2"></i>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-black fw-medium">mahmoud@gmail.com</a>
+                        <span class="text-capitalize text-black-50">Support email</span>
+                    </div>
+                </div>
+
+                <span class="compare-cards me-md-auto">
+                    <a href="#" class="text-capitalize fw-medium">
+                        support <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="questions col-lg">
+                <div class="question py-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="h5 d-inline-block">How do I open an Banko account?</p>
+                        <span><i class="fa-solid fa-plus h3"></i></span>
+                    </div>
+                    <p class="text-black-50 not-visable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget
+                        gravida cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+                <div class="question py-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="h5 d-inline-block">How do I order a new card?</p>
+                        <span><i class="fa-solid fa-plus h3"></i></span>
+                    </div>
+                    <p class="text-black-50 not-visable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget
+                        gravida cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+                <div class="question py-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="h5 d-inline-block">How to change my account limits?</p>
+                        <span><i class="fa-solid fa-plus h3"></i></span>
+                    </div>
+                    <p class="text-black-50 not-visable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget
+                        gravida cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+                <div class="question py-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="h5 d-inline-block">How does Banko premium works?</p>
+                        <span><i class="fa-solid fa-plus h3"></i></span>
+                    </div>
+                    <p class="text-black-50 not-visable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget
+                        gravida cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+                <div class="question py-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="h5 d-inline-block">Can I have two Banko accounts?</p>
+                        <span><i class="fa-solid fa-plus h3"></i></span>
+                    </div>
+                    <p class="text-black-50 not-visable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget
+                        gravida cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- blog -->
+    <div class="container">
+        <div class="blog py-5">
+            <div class="blog-text d-flex justify-content-between">
+                <p class="h1 text-capitalize d-inline-block w-auto mb-0 "> blog</p>
+                <span class="compare-cards align-self-end">
+                    <a href="blog.html" class="text-capitalize fw-medium ">
+                        all articles <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="blog-cards pt-5 row justify-content-between">
+                <div class="blog-card pb-4 col-md-6 col-lg-4">
+                    <a href="singleFeature.html"><img class="img-fluid" src="images/blog-one.jpg" alt="Not found"></a>
+                    <h4 class="text-capitalize my-3">how to start using banko for your startup</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</h6>
+                    <div class="blog-btns mt-4 ps-2">
+                        <a class="text-capitalize text-black text-decoration-none bg-light-subtle p-2 rounded rounded-5 me-2"
+                            href="#">Product</a>
+                        <a class="text-capitalize text-black text-decoration-none bg-light-subtle p-2 rounded rounded-5"
+                            href="#">Technology</a>
+                    </div>
+                </div>
+                <div class="blog-card pb-4 col-md-6 col-lg-4">
+                    <a href="singleFeature.html"><img class="img-fluid" src="images/blog-two.jpg" alt="Not found"></a>
+                    <h4 class="text-capitalize my-3">10 Things Nobody Told You About Banko</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</h6>
+                    <div class="blog-btns mt-4 ps-2">
+                        <a class="text-capitalize text-black text-decoration-none bg-light-subtle p-2 rounded rounded-5 me-2"
+                            href="#">Product</a>
+                        <a class="text-capitalize text-black text-decoration-none bg-light-subtle p-2 rounded rounded-5"
+                            href="#">Technology</a>
+                    </div>
+                </div>
+                <div class="blog-card pb-4 col-md-6 col-lg-4">
+                    <a href="singleFeature.html"><img class="img-fluid" src="images/blog-three.jpg" alt="Not found"></a>
+                    <h4 class="text-capitalize my-3">7 Ways To Improve You Saving Habits</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.</h6>
+                    <div class="blog-btns mt-4 ps-2">
+                        <a class="text-capitalize text-black text-decoration-none bg-light-subtle p-2 rounded rounded-5 me-2"
+                            href="#">Product</a>
+                        <a class="text-capitalize text-black text-decoration-none bg-light-subtle p-2 rounded rounded-5"
+                            href="#">Technology</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <!-- footer -->
+    <div class="container">
+        <footer class="text-capitalize py-5" id="footer">
+            <ul class="list-unstyled row text-center text-md-start" class="sections">
+                <li class="col-12 col-md-3 col-lg-4 col-xl-5 col-xxl-6 fw-bold fs-2 text-lowercase text-start">
+                    banquee.
+                </li>
+                <li class="col-6 col-md py-2">
+                    <ul class="list-unstyled">
+                        <span>about</span>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">features</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">pricing</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">support</a></li>
+                    </ul>
+                </li>
+                <li class="col-6 col-md py-2">
+                    <ul class="list-unstyled">
+                        <span>blog</span>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">products</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">technology</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">crypto</a></li>
+                    </ul>
+                </li>
+                <li class="col-6 col-md py-2">
+                    <ul class="list-unstyled">
+                        <span>webflow</span>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">styleguide</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">licensing</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">changelog</a></li>
+                    </ul>
+                </li>
+                <li class="col-6 col-md py-2">
+                    <ul class="list-unstyled">
+                        <span>social Media</span>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">twitter</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">facebook</a></li>
+                        <li class="py-2"><a class="text-decoration-none fs-6 fw-medium" href="#">instagram</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="descripe pt-3 border-top">
+                <div class="start">© Made by <span>Mahmoud Emad</span> - Powered by <span>Webflow</span></div>
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src=" js/main.js"></script>
+    <script src=" js/bootstrap.bundle.min.js"></script>
+    <script src=" js/all.min.js"></script>
+</body>
+
+</html>

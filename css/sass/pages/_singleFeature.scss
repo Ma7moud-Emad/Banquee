@@ -1,0 +1,64 @@
+// info
+.info {
+    @media (min-width: 768px) {
+        width: 75%;
+    }
+    span {
+        padding: 4px 10px;
+        border-radius: 4px;
+        font: {
+            size: 13px;
+            family: "Inter", sans-serif;
+            weight: 500;
+        }
+    }
+    h2 {
+        font-size: 55px;
+        @media (min-width: 769px) and (max-width: 991px) {
+            font-size: 39px;
+        }
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+    h5 {
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+    img {
+        border-radius: 16px;
+    }
+}
+.info-text {
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+    h4 {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+.info-links {
+    @media (min-width: 768px) {
+        width: 25%;
+    }
+    ul {
+        li {
+            background-color: rgba(248, 248, 248, 1);
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            &:hover {
+                svg {
+                    color: $mainColor;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "../helpers/variables";
+
+/* button ==> open account */
+.btn-component {
+    text-decoration: none;
+    background-color: $mainColor;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+}
+
+/* button ==> compare cards */
+.compare-cards {
+    font-family: "Inter", sans-serif;
+    margin-left: 10px;
+    a {
+        color: $mainColor;
+        text-decoration: none;
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

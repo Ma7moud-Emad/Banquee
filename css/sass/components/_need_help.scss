@@ -1,0 +1,9 @@
+@import "questions";
+/* need help */
+.need-help {
+    h1 {
+        @media (min-width: 576px) {
+            font-size: 60px;
+        }
+    }
+}
